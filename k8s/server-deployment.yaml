@@ -9,7 +9,8 @@ spec:
       component: server
   template:
     metadata:
-      labels: server
+      labels:
+        component: server
     spec:
       containers:
         - name: server
