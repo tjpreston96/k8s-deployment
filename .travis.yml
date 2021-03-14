@@ -14,7 +14,7 @@ before_install:
   # Download and Install kubectl command line tool
   - gcloud components update kubectl
   # authorize google cloud sdk with service account
-  - gcloud auth activate-servoce-account --key-file service-account.json
+  - gcloud auth activate-service-account --key-file service-account.json
   - gcloud config set project multi-k8s-307505
   - gcloud config set compute/zone us-central1-c
   - gcloud container clusters get-credentials multi-cluster
